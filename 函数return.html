@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_return</title>
+    <script>
+        window.onload = function(){
+            var oInpt1 = document.getElementById('input1');
+            var oInpt2 = document.getElementById('input2');
+            var oBtn1 = document.getElementById('btn');
+            <!--oInpt1.value = 10;-->
+            <!--oBtn1.onclick = function(){-->
+                <!--var v1 = oInpt1.value;-->
+                <!--var v2 = oInpt2.value;-->
+                <!--var rs = add(v1,v2);-->
+                <!--alert(rs);-->
+            <!--}-->
+            <!--alert(add(oInpt1.value,oInpt2.value));-->
+            oBtn1.onclick = function(){
+                <!--alert('1');-->
+                alert(add(oInpt1.value,oInpt2.value));
+            }
+            function add(a,b){
+                var c = parseInt(a) + parseInt(b);
+                return c;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="input1">
+    <input type="text" name="" id="input2">
+    <input type="button" name="" value="add" id="btn">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title1</title>
+    <script>
+        alert(a); //undefined 没有报错, 因为预解析.
+        //alert(c) // 报错  c 没有声明
+        var a = 123;
+        var b;
+        window.onload= function(){
+            document.getElementById('div1').title="22222222223";
+        }
+        myalert();  // 面试点, 这里会弹出什么, undefine的,由于预解析的存在,按照人的逻辑来,虽然不美观.
+        function myalert(){
+            alert('hello!')
+        }
+
+    </script>
+</head>
+<body>
+    <div id="div1" title="1111111">tisisisi is div</div>
+<script>
+//操作属性1
+    document.getElementById('div1').title="22222222222";
+</script>
+</body>
+</html>

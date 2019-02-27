@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title1</title>
+    <script>
+        window.onload= function(){
+           // document.getElementById('div1').title="22222222223";
+            var oDiv = document.getElementById('div1');
+            changestyle('color', 'gold');
+            changestyle('background', 'pink');
+            function changestyle(styl,val){
+                oDiv.style[styl] = val;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" title="12">tisisisi is div</div>
+</body>
+</html>
