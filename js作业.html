@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js作业</title>
+    <script>
+        window.onload = function(){
+            function addnum(n1,n2){return n1+n2}
+            <!--alert(addnum(2,100));-->
+            var sle = document.getElementById('s1');
+            <!--alert(op.length);-->
+            var btn = document.getElementById('btn');
+            btn.onclick = function(){
+                var sle = document.getElementById('s1');
+                alert(sle.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input name="i1">
+    <select id="s1">
+        <option name="o1">+</option>
+        <option name="o2">-</option>
+        <option name="o3">*</option>
+        <option name="o4">/</option>
+    </select>
+    <input name="i2">
+    <input id="btn" type="button" name="calculate" value="calculate">
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时钟</title>
+    <script>
+        window.onload = function(){
+
+
+
+            <!--oDiv.value = 'time is ' + year + '年' + month + '月' +;-->
+            function cgtime(){
+                var t1 = new Date();
+                var year = t1.getFullYear();
+                var month  = t1.getMonth()+1;
+                var oDiv = document.getElementById('div1');
+                var sec = t1.getSeconds();
+                oDiv.innerHTML =  'time is ' + year + '年' + month + '月'+ sec+'miao';
+
+            }
+            setInterval(cgtime,1000);
+            <!--cgtime();-->
+            <!--alert(oDiv.value);-->
+
+        }
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
