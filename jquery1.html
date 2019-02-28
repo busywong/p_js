@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+        <!--alert($);-->\
+        window.onload = function(){
+            var oDiv = document.getElementById('div');
+            alert(oDiv.innerHTML);
+        }
+        <!--$(document).ready(function(){-->
+            <!--var $div = $('#div');-->
+            <!--alert($div.html() + 'jquary');-->
+        <!--})-->
+        $(function(){
+            var $div = $('#div');
+            alert($div.html() + 'jquary');
+        })
+    </script>
+</head>
+<body>
+    <div id="div">this is div ele</div>
+</body>
+</html>

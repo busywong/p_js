@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工厂模式</title>
+    <script>
+        function Person (name, age,job){
+            var o = new Object();
+            o.name = name;
+            o.age = age;
+            o.job = job;
+            o.showname = function(){
+                alert(this.name);
+            }
+            o.showage = function(){
+                alert(this.age);
+            }
+            o.showjob = function(){
+                alert(this.job);
+            }
+            return o;
+         }
+         var tm = Person('tm',18, 'engineer');
+         var jk = Person('jk',20, 'worker');
+         tm.showjob();
+         jk.showjob();
+    function Teacher(name,age,gender){
+        var o = new Object();
+        o.name = name;
+        o,age = age;
+        o.gender = gender;
+        o.sage = function (){
+            alert(this.age);
+        }
+        o.sname = function (){
+            alert(this.name);
+        }
+        o.sgender = function (){
+            alert(this.gender);
+        }
+        return o;
+    }
+    var mao = Teacher('mao',22, 3);
+    mao.sgender();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

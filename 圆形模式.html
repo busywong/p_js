@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆形模式</title>
+    <script>
+        function Person(name,age,job){
+            this.name = name;
+            this.age = age;
+            this.job = job;
+        }
+        Person.prototype.showname = function(){
+            alert(this.name);
+        }
+
+
+        var  tm = new Person('tm',18,'engineer');
+        var jk = new Person('jk',19,'engineer');
+        tm.showname = function(){
+            alert('my age is' + this.age)
+        }
+        tm.showname();
+        jk.showname();
+        alert(tm.showname ==jk.showname);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
